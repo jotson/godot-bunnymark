@@ -7,13 +7,14 @@ var elapsed = 0
 func _ready():
 	# Initalization here
 	set_process(true)
+	addBunny(10)
 	pass
 
 
 
 func _process(delta):
 	if Input.is_action_pressed('mouse_down'):
-		addBunny()
+		addBunny(10)
 		
 	elapsed = elapsed + delta
 	
@@ -27,8 +28,8 @@ func _process(delta):
 		
 		elapsed = 0
 
-func addBunny():
-	for i in range(10):
+func addBunny(n):
+	for i in range(n):
 		var b = bunny.instance()
 		add_child(b)
 		bunnyCount = bunnyCount + 1
