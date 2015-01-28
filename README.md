@@ -1,6 +1,6 @@
 # BunnyMark
 
-This is the classic Bunnymark benchmark for Godot Engine.
+This is the classic BunnyMark benchmark for Godot Engine.
 
 This is basically a port of the [Pixi.js version](http://www.goodboydigital.com/pixijs/bunnymark/). I'm new to Godot so send pull requests with performance improvements.
 
